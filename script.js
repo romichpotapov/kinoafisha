@@ -34,7 +34,7 @@ requestApi = ( url) => {
         output.results.forEach(function (item) {
             let nameItem = item.name || item.title;
             let releaseDate = item.release_date || 'Soon';
-            inner += `<div class="col-12 col-md-4 ">${nameItem}<span class="badge badge-secondary">${releaseDate}</span></div>`;
+            inner += `<div class="col-12 col-md-4 "><span class="badge badge-secondary"> ${releaseDate}</span> ${nameItem}</div>`;
             
         });
 
